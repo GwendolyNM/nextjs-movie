@@ -7,8 +7,6 @@ import styles from '../styles/navigation.module.css';
 
 function Navigation() {
   const path = usePathname();
-
-  // 경로를 정규화하여 비교 (마지막 슬래시 제거)
   const normalizePath = (p: string) => p.replace(/\/$/, '');
 
   return (

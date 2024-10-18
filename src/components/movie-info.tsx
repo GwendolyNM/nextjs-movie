@@ -2,8 +2,7 @@ import Image from 'next/image';
 import styles from '@/styles/movie-info.module.css';
 import { StarRating } from './movie-stars';
 import Link from 'next/link';
-
-const API_URL = `https://nomad-movies.nomadcoders.workers.dev/movies`;
+import { API_URL } from '@/app/contents';
 
 interface MovieInfoProps {
   id: number;
